@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>School Sorter 1.5</title>
+    <script src="objects.js"></script>
+    <script src="data.js"></script>
+    <script src="actions.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css"/>
+</head>
+<body onload="populateLists()">
+<div id="Center2">
+<button type="button" class="btn btn-primary" id="listBtn" onclick="listItems()">List Items</button>
+<br><br>
+<select id="list">
+    <option value="0">Students</option>
+    <option value="1">Teachers</option>
+    <option value="2">Sections</option>
+</select>
+</div>
+<br>
+<div class="Center" id="listOutput"></div>
+
+<br><br>
+<div id="Center">
+<br>
+    <form class="form-inline">
+<input class="form-control" id="sfn" value="Paul" placeholder="First Name">
+<input class="form-control" id="sln" value="Joseph" placeholder="Last Name">
+<input class="form-control" id="sg" value="12" placeholder="Grade">
+    </form>
+<br>
+<button type="button" class="btn btn-success" id="addStudent" onclick="addStudent()">Add Student</button>
+
+<br><br>
+    <form class="form-inline">
+<input class="form-control" id="tfn" value="Alan" placeholder="First Name">
+<input class="form-control" id="tln" value="Miller" placeholder="Last Name">
+<input class="form-control" id="ts" value="English" placeholder="Subject">
+    </form>
+<br>
+<button type="button" class="btn btn-success" id="addTeacher" onclick="addTeacher()">Add Teacher</button>
+
+<br><br>
+    <form class="form-inline">
+<input class="form-control" id="sn" value="Spanish 1/2" placeholder="Subject">
+<input class="form-control" id="sc" value="30" placeholder="Section Count">
+    </form>
+<br>
+<button type="button" class="btn btn-success" id="addSection" onclick="addSection()">Add Section</button>
+
+<br><br>
+
+<div id="confirm"></div>
+<select id="studentList">
+    <option value="0">Select Student</option>
+</select>
+<select id="sectionList">
+    <option value="0">Select Section</option>
+</select>
+<button class="btn btn-success" id="addSTD" onclick="addStudentToSection()">Add To Section</button>
+<button class="btn btn-danger" id="remSTD" onclick="removeStudentFromSection()">Remove From Section</button>
+    <select id="teacherList">
+    <option value="0">Select Teacher</option>
+</select>
+<select id="sectionList2">
+    <option value="0">Select Section</option>
+</select>
+<button class="btn btn-success" id="addTEA" onclick="addTeacherToSection()">Add To Section</button>
+<button class="btn btn-danger" id="remTEA" onclick="removeTeacherFromSection()">Remove From Section</button>
+</div>
+</body>
+</html>

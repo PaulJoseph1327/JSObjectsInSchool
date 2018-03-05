@@ -1,0 +1,37 @@
+body {
+    background: url(https://media.istockphoto.com/photos/old-school-chalkboard-picture-id589091614?k=6&m=589091614&s=612x612&w=0&h=YJ74-E8PPeKBQ7G9xDAChWzF0r0n-B58tMYdskWm_4c=);
+    no-repeat: center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    align-content: center;
+}
+
+#listOutput{
+    color: white;
+    text-align: center;
+}
+
+#confirm{
+    color: white;
+    text-align: center;
+}
+
+#Center{
+    width: 80%;
+    margin: auto;
+    align: center;
+
+}
+
+#Center2{
+    width: 6.25%;
+    margin: auto;
+    align: center;
+}
+
+.form-control{
+    width: 200px;
+    height: 25px;
+}
